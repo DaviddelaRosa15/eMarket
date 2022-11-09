@@ -1,0 +1,111 @@
+﻿@using eMarket.Core.Application.ViewModels.Articles
+@model List<DetailsViewModel>
+@{
+    ViewData["Title"] = "Detalle del producto";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (DetailsViewModel item in Model)
+        {
+            <div class="col-7 reducir-relleno-right">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        @if (item.ImageUrlTwo != null)
+                        {
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        }
+                        @if (item.ImageUrlThree != null)
+                        {
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        }
+                        @if (item.ImageUrlFour != null)
+                        {
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        }
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="@item.ImageUrlOne" class="d-block w-100 img-product-size-details" alt="...">
+                        </div>
+
+                        @if (@item.ImageUrlTwo != null)
+                        {
+                            <div class="carousel-item">
+                                <img src="@item.ImageUrlTwo" class="d-block w-100 img-product-size-details" alt="...">
+                            </div>
+                        }
+                        @if (@item.ImageUrlThree != null)
+                        {
+                            <div class="carousel-item">
+                                <img src="@item.ImageUrlThree" class="d-block w-100 img-product-size-details" alt="...">
+                            </div>
+                        }
+                        @if (@item.ImageUrlThree != null)
+                        {
+                            <div class="carousel-item">
+                                <img src="@item.ImageUrlFour" class="d-block w-100 img-product-size-details" alt="...">
+                            </div>
+                        }
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-5 reducir-relleno-left">
+                <div class="card img-product-size-details">
+                    <div class="card-body bgfondoCard">
+                        <h3 class="card-title text-lg-center">@item.Name</h3>
+                        <p class="m-0">Precio: <span class="fw-bold">$@item.Price</span></p>
+                        <p class="card-text"> Descripción: <span class="fw-bold">@item.Description</span></p>                       
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item color-card">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">Categoría: <span class="fw-bold">@item.CategoryName</span></p>
+                            </div>
+                        </li>
+                        <li class="list-group-item color-card">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">Fecha de publicación: <span class="fw-bold">@item.PublicationDate.ToShortDateString()</span></p>
+                            </div>
+                        </li>
+                        <li class="list-group-item color-card">
+                            <div class="justify-content-between align-items-center">
+                                <h4 class="text-lg-center">Datos del vendedor</h4>
+                                <p class="m-0">Nombre: <span class="fw-bold">@item.NameUser</span></p>
+                            </div>
+                        </li>
+                        <li class="list-group-item color-card">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">Correo: <span class="fw-bold">@item.EmailUser</span></p>
+                            </div>
+                        </li>
+                        <li class="list-group-item color-card">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">Telefono: <span class="fw-bold">@item.PhoneUser</span></p>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item color-card">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a asp-controller="Home" asp-action="Index" class="btn btn-warning">Volver atrás</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

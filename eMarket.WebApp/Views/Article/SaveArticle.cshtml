@@ -1,0 +1,143 @@
+﻿@using eMarket.Core.Application.ViewModels.Articles;
+@model SaveArticleViewModel
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Guardar Articulo";
+}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header text-light bgfondoCardHeader">
+                    <h4>@(editMode ? $"Editando el Articulo: {Model.Name}" : "Creando un nuevo Articulo")</h4>
+                </div>
+                <div class="card-body bgfondoCard">
+
+                    @if (Model.Categories == null || Model.Categories.Count == 0)
+                    {
+                        <h4>No hay categorias creadas</h4>
+                        <a asp-controller="Article" asp-action="Index" class="btn btn-warning">Volver atras</a>
+                    }
+                    else
+                    {
+                        <form method="post" asp-controller="Article" asp-action="@(editMode ? "Edit":"Create")" enctype="multipart/form-data">
+
+                            <div class="mb-3">
+                                <label asp-for="Name" class="form-label">Nombre: </label>
+                                <input type="text" asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Description" class="form-label">Descripcion: </label>
+                                <textarea asp-for="Description" class="form-control"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Price" class="form-label">Precio: </label>
+                                <input type="number" step="any" asp-for="Price" class="form-control" />
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Imagenes subidas hasta el momento</label>
+                                <div id="carouselExampleControls" class="carousel slide h-50" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        @if (@Model.ImageUrlOne != null)
+                                        {
+                                            <div class="carousel-item active">
+                                                <img src="@Model.ImageUrlOne" class="d-block w-100" alt="...">
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                        <h5>Suba las imagenes del articulo</h5>
+                                        }
+
+                                        @if (@Model.ImageUrlTwo != null)
+                                        {
+                                            <div class="carousel-item">
+                                                <img src="@Model.ImageUrlTwo" class="d-block w-100" alt="...">
+                                            </div>
+                                        }
+                                        @if (@Model.ImageUrlThree != null)
+                                        {
+                                            <div class="carousel-item">
+                                                <img src="@Model.ImageUrlThree" class="d-block w-100" alt="...">
+                                            </div>
+                                        }
+                                        @if (@Model.ImageUrlFour != null)
+                                        {
+                                            <div class="carousel-item">
+                                                <img src="@Model.ImageUrlFour" class="d-block w-100" alt="...">
+                                            </div>
+                                        }
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="ImageOne" class="form-label">Seleccione una Imagen:</label>
+                                @if (editMode)
+                                {
+                                    <input asp-for="ImageOne" class="form-control" />
+                                }
+                                else
+                                {
+                                    <input required asp-for="ImageOne" class="form-control" />
+                                }
+
+                                <span asp-validation-for="ImageOne" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="ImageTwo" class="form-label">Seleccione otra imagen:</label>
+                                <input asp-for="ImageTwo" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="ImageThree" class="form-label">Seleccione otra imagen:</label>
+                                <input asp-for="ImageThree" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="ImageFour" class="form-label">Seleccione otra imagen:</label>
+                                <input asp-for="ImageFour" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="CategoryId" class="form-label">Categoria: </label>
+                                <select asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories,"Id","Name"))" class="form-select">
+                                    <option value="0">Seleccione una opcion</option>
+
+                                </select>
+                                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                            </div>
+
+                            <input type="hidden" asp-for="Id" />
+
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <a asp-controller="Article" asp-action="Index" class="btn btn-warning">Volver atras</a>
+
+                        </form>
+                    }
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

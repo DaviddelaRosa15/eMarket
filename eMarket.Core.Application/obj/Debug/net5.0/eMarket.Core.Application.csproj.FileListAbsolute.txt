@@ -1,0 +1,15 @@
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\bin\Debug\net5.0\eMarket.Core.Application.deps.json
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\bin\Debug\net5.0\eMarket.Core.Application.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\bin\Debug\net5.0\eMarket.Core.Application.pdb
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\bin\Debug\net5.0\eMarket.Core.Domain.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\bin\Debug\net5.0\eMarket.Core.Domain.pdb
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.csproj.AssemblyReference.cache
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.AssemblyInfoInputs.cache
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.AssemblyInfo.cs
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.csproj.CopyComplete
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\refint\eMarket.Core.Application.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\eMarket.Core.Application.pdb
+C:\Users\rlope\source\repos\eMarket\eMarket.Core.Application\obj\Debug\net5.0\ref\eMarket.Core.Application.dll

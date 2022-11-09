@@ -1,0 +1,135 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+.bgnavigator {
+    background: linear-gradient(to left,#5a2693,#6195eb);
+}
+
+.bgfondo {
+    background: linear-gradient(45deg, #4b0dc3 0 50%, #3330f7 50% 100%);
+}
+
+.bgfondoCard {
+    background: #efefef;
+}
+
+.bgfondoCardHeader {
+    background: #007eff;
+}
+
+.img-product-size {
+    height: 340px;
+}
+
+.img-product-size-details {
+    height: 540px;
+}
+
+.card-sizing {
+    height: 605px;
+}
+
+.reducir-relleno-left {
+    padding-left: 2px;
+}
+
+.reducir-relleno-right {
+    padding-right: 2px;
+}
+
+.img-size-save{
+    height: 340px;
+}
+
+.maximum-High {
+    height: 360px;
+}
+
+.margen{
+    margin-top: 5rem;
+}
+
+.details-hov:hover {
+    opacity: 75%;
+}
+
+.details-hov:active {
+    cursor: wait;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}

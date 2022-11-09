@@ -1,0 +1,17 @@
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\bin\Debug\net5.0\eMarket.Infrastructure.Persistence.deps.json
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\bin\Debug\net5.0\eMarket.Infrastructure.Persistence.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\bin\Debug\net5.0\eMarket.Infrastructure.Persistence.pdb
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\bin\Debug\net5.0\eMarket.Core.Application.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\bin\Debug\net5.0\eMarket.Core.Domain.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\bin\Debug\net5.0\eMarket.Core.Application.pdb
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\bin\Debug\net5.0\eMarket.Core.Domain.pdb
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\refint\eMarket.Infrastructure.Persistence.dll
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\eMarket.Infrastructure.Persistence.pdb
+C:\Users\rlope\source\repos\eMarket\eMarket.Infrastructure.Persistence\obj\Debug\net5.0\ref\eMarket.Infrastructure.Persistence.dll

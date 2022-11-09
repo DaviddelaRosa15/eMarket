@@ -1,0 +1,63 @@
+﻿@using eMarket.Core.Application.ViewModels.Articles;
+@model List<ArticleViewModel>
+@{
+    ViewData["Title"] = "Articulos";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="bgfondoCardHeader p-2 rounded-2 mb-1 text-light">
+                <h1>Mantenimiento de mis anuncios</h1>
+            </div>
+            <div class="row mb-2">
+                <div class="col-3">
+                    <a asp-controller="Article" asp-action="Create" class="btn btn-success">Crear Nuevo Anuncio</a>
+                </div>
+            </div>
+            <div class="card">
+                @if (Model == null || Model.Count == 0)
+                {
+                    <h3 class="text-lg-center mb-3">No hay articulos</h3>
+                }
+                else
+                {
+                    <div class="card-body bgfondoCard">
+                        <div class="row">
+                            @foreach (ArticleViewModel item in Model)
+                            {
+                                <div class="col-4 mb-3 card-sizing">
+                                    <div class="card shadow-sm card-sizing color-card mx-lg-2">
+                                        <img src="@item.ImageUrlOne" class="img-product-size bd-placeholder-img card-img-top " />
+
+                                        <div class="card-body">
+                                            <h3>@item.Name</h3>
+                                            <p class="card-text">@item.Description</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item color-card">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <small>Categoría: <span class="fw-bold">@item.CategoryName</span></small>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-group-item color-card">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+														<a asp-controller="Article" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Editar</a>
+														<a asp-controller="Article" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Borrar</a>
+													</div>
+                                                    <small>Precio: <span class="fw-bold">$@item.Price</span></small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
